@@ -1,5 +1,7 @@
 package saglio.louis.todo;
 
+import com.activeandroid.query.Select;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -25,7 +27,7 @@ public class Helper {
         return colorMap.get(priority);
     }
 
-    public LinkedList<Task> genarateTasks() {
+    public LinkedList<Task> generateTasks() {
         LinkedList<Task> tasks = new LinkedList<>();
         tasks.add(new Task("tache 1", false, Priority.High));
         tasks.add(new Task("tache 2", false, Priority.Normal));

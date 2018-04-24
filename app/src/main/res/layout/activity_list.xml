@@ -18,4 +18,10 @@
         android:text="@string/add"
         android:id="@+id/add_button"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:id="@+id/delete_button"/>
+
 </LinearLayout>

@@ -34,8 +34,13 @@ public class Adapter extends ArrayAdapter {
         TextView taskText = convertView.findViewById(R.id.todo_id);
         taskText.setText(currentTask.getText());
 
-        CheckBox checkBox = convertView.findViewById(R.id.check_box);
-        checkBox.setChecked(currentTask.isChecked());
+        TextView textView = convertView.findViewById(R.id.check_box);
+        if (currentTask.isChecked()) {
+            textView.setText("X");
+        } else {
+            textView.setText("O");
+        }
+
 
         Helper helper = Helper.getInstance();
 
